@@ -1,4 +1,4 @@
-### Google grupper - synkronisering med Scoutnet
+# Google grupper - synkronisering med Scoutnet
 I ett Google kalkylark kan du ställa in namn på google-grupper, dess e-postadress,
 vilken e-postlista i Scoutnet de ska synkroniseras mot samt hur den ska synkronisera
 i fältet Synkinställning.
@@ -30,14 +30,14 @@ Du kan också lägga till e-postadresser manuellt till en grupp i kalkylarket om
 I stället för att ange listid på något ställe så anger du en e-postadress eller flera med
 komma emellan. Det går bra att både använda listid och e-postadress till samma lista.
 
-#### Enkelt och avancerat läge
+## Enkelt och avancerat läge
 Det går att ställa in om du vill visa samtliga kolumner i kalkylarket för olika
 inställningar eller endast de grundläggande. Detta för att kunna hålla det enkelt.
 I filen Grupper.gs finns funktionerna enkelLayout() och avanceradLayout() att använda för detta.
 De visar och döljer egentligen bara olika kolumner i kalkylarket, så om man vill
 kan man anropa avanceradLayout() för att visa alla kolumner och sen dölja de man inte önskar.
 
-#### Förtydliga hur man skickar e-brev till en e-postlista
+## Förtydliga hur man skickar e-brev till en e-postlista
 Du kan ange en sidfot som läggs till i alla e-brev som skickas till listan.
 Bra till t.ex en e-postlista för ledare eller utmanare så att alla vet hur de ska mejla
 för att skicka till alla. Detta kanske man glömmer bort att nämna för nya och om man vill
@@ -45,7 +45,7 @@ slippa tänka på att komma ihåg att nämna det när det kommer någon ny så s
 alla e-brev som de får skickat till sig via e-postlistan.
 Kan också förtydliga vilken lista som brevet skickades till och vilka som var mottagarna.
 
-#### Begränsa åtkomst för att skicka och ta emot e-post
+## Begränsa åtkomst för att skicka och ta emot e-post
 Om du vill kan du ställa in att enbart vissa personer ska kunna skicka till en lista,
 att vissa personer ska både kunna skicka och ta emot eller att vissa enbart ska kunna
 ta emot e-post.
@@ -62,7 +62,7 @@ att ange list-ID under rubrikerna "Kan skicka" & "Kan ta emot". Du behöver dock
 under alla tre typerna om du inte vill. Du kanske vill att några ska kunna skicka och ta emot,
 till en lista och några andra som bara ska få skicka.
 
-#### Inställningar för att komma igång (i Konfiguration.gs)
+## Inställningar för att komma igång (i Konfiguration.gs)
 - Ändra kårens domännamn på variabeln "domain"
 - Ändra kårens "Kår-ID för webbtjänster" på variabeln "groupId. Hittas i Scoutnet på sidan för
   Webbkoppling
@@ -78,17 +78,3 @@ till en lista och några andra som bara ska få skicka.
 - Välj funktionen "createHeaders_Grupper" i Grupper.gs och kör den.
 - Fyll i övriga fält i filen Konfiguration.gs vid behov och möjligt.
 - Klart.
-
-## Ny version - Hur du gör för att uppgradera
-- Uppdatering av programmet sker genom att ladda ner en ny version och uppdatera filerna.
-- Om programmet använder kalkylark (för synkronisering av grupper) kan det hända att du behöver
-  välja att visa samtliga kolumner i kalkylarket för att kunna infoga eller ta bort kolumner om
-  det har skett någon ändring.
-- Du hittar senaste versionen av programmet på 
-  https://github.com/Scouterna/Google-Scoutnet-synk/releases/latest och där kan
-  du också ser vilken funktionalitet som är ny i respektive version och om du behöver göra
-  något för att uppdatera förutom att uppdatera koden.
-- Kör de olika programmen manuellt en gång innan du kör med tidsinställning då det kan ha
-  tillkommit någon ny funktionalitet som kräver ditt tillstånd.
-- Du kan hålla dig uppdaterad med nya versioner genom att om du är inloggad på Github trycka
-  på knappen **Watch** uppe till höger på sidan för att då kunna bli notifierad vid ny version.

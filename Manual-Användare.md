@@ -1,4 +1,4 @@
-### Google användarkonton - synkronisering med Scoutnet
+# Google användarkonton - synkronisering med Scoutnet
 Synkroniserar personer som är med på e-postlistor från Scoutnet genom att man
 anger id-nummret för e-postlistan i filen Konfiguration.gs i variabeln "userAccountConfig".
 Det går bra att ange flera e-postlistor med kommatecken samt skriva kommentarer med
@@ -21,7 +21,7 @@ Om det finns personer som har samma namn (för- och efternamn) angivet i Scoutne
 kommer de som skapas som nr2 osv skapas på formen fornamn.efternamnX@domännamn.se
 där X motsvarar en siffra från 1-5.
 
-#### Inställningar för att komma igång (i Konfiguration.gs)
+## Inställningar för att komma igång (i Konfiguration.gs)
 - Ändra kårens domän namn på variabeln "domain"
 - Ändra kårens grupp-id som finns angivet i Scoutnet på sidan för Webbkoppling
 - Ändra api-nyckeln som under Webbkoppling i Scoutnet står under
@@ -29,6 +29,6 @@ där X motsvarar en siffra från 1-5.
 - Om du gör detta för ett distrikt. Ändra variabeln "organisationType" från "group"
   till "district".
 
-### Övrigt
+# Övrigt
 - Avstängda konton, alltså de som inte längre matchar de som ska synroniseras flyttas till
   underorganisationen "/Scoutnet/Avstängda"
