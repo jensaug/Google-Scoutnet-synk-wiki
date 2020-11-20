@@ -30,5 +30,5 @@ där X motsvarar en siffra från 1-5.
   till "district".
 
 # Övrigt
-- Avstängda konton, alltså de som inte längre matchar de som ska synroniseras flyttas till
-  underorganisationen "/Scoutnet/Avstängda"
+- Avstängda konton, alltså de som inte längre matchar de som ska synroniseras flyttas
+  automatiskt till underorganisationen "/Scoutnet/Avstängda"

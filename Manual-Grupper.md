@@ -1,4 +1,4 @@
-# Google grupper - synkronisering med Scoutnet
+# Google grupper/e-postlistor - synkronisering med Scoutnet
 I ett Google kalkylark kan du ställa in namn på google-grupper, dess e-postadress,
 vilken e-postlista i Scoutnet de ska synkroniseras mot samt hur den ska synkronisera
 i fältet Synkinställning.
@@ -29,6 +29,23 @@ man har gjort rätt genom att trycka på länken till höger om varje e-postadre
 Du kan också lägga till e-postadresser manuellt till en grupp i kalkylarket om du vill.
 I stället för att ange listid på något ställe så anger du en e-postadress eller flera med
 komma emellan. Det går bra att både använda listid och e-postadress till samma lista.
+
+## Inställningar för att komma igång (i Konfiguration.gs)
+- Ändra kårens domännamn på variabeln "domain"
+- Ändra kårens "Kår-ID för webbtjänster" på variabeln "groupId. Hittas i Scoutnet på sidan för
+  Webbkoppling
+- Ändra api-nyckeln med namn api_key_mailinglists som hittas i Scoutnet under
+  Webbkoppling under "Get a csv/xls/json list of members, based on mailing lists you have set up"
+- Skapa ett Google Kalkylark och klistra in webbadressen vid variabeln "spreadsheetUrl_Grupper"
+- Ändra vart e-post som misstänkts för skräppost ska skickas genom att uppdatera variabeln
+  "moderateContentEmail". Om inget anges skickas e-breven till den användare som kör detta program.
+  Det går inte att ange en av kårens grupper som mottagare, men enskilda e-postadresser och
+  Scoutnet-id går bra.
+- Om du gör detta för ett distrikt. Ändra variabeln "organisationType" från "group" till "district".
+- Spara filen.
+- Välj funktionen "createHeaders_Grupper" i Grupper.gs och kör den.
+- Fyll i övriga fält i filen Konfiguration.gs vid behov och möjligt.
+- Klart.
 
 ## Enkelt och avancerat läge
 Det går att ställa in om du vill visa samtliga kolumner i kalkylarket för olika
@@ -61,20 +78,3 @@ Om du vill kan du också specificera vilka som ska få skicka och ta emot för e
 att ange list-ID under rubrikerna "Kan skicka" & "Kan ta emot". Du behöver dock inte ange
 under alla tre typerna om du inte vill. Du kanske vill att några ska kunna skicka och ta emot,
 till en lista och några andra som bara ska få skicka.
-
-## Inställningar för att komma igång (i Konfiguration.gs)
-- Ändra kårens domännamn på variabeln "domain"
-- Ändra kårens "Kår-ID för webbtjänster" på variabeln "groupId. Hittas i Scoutnet på sidan för
-  Webbkoppling
-- Ändra api-nyckeln med namn api_key_mailinglists som hittas i Scoutnet under
-  Webbkoppling under "Get a csv/xls/json list of members, based on mailing lists you have set up"
-- Skapa ett Google Kalkylark och klistra in webbadressen vid variabeln "spreadsheetUrl_Grupper"
-- Ändra vart e-post som misstänkts för skräppost ska skickas genom att uppdatera variabeln
-  "moderateContentEmail". Om inget anges skickas e-breven till den användare som kör detta program.
-  Det går inte att ange en av kårens grupper som mottagare, men enskilda e-postadresser och
-  Scoutnet-id går bra.
-- Om du gör detta för ett distrikt. Ändra variabeln "organisationType" från "group" till "district".
-- Spara filen.
-- Välj funktionen "createHeaders_Grupper" i Grupper.gs och kör den.
-- Fyll i övriga fält i filen Konfiguration.gs vid behov och möjligt.
-- Klart.
