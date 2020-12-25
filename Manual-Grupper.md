@@ -7,18 +7,18 @@ från Scoutnet för att bygga upp en större egen. Det går också bra att skriv
 med parenteser.
 
 Du kan där för synkinställning för respektive e-postlista ange följande
-- "@" Lägg till personens Google-konto om den har något, annars hoppa över personen
-- "-" Lägg endast till personens e-postadress som listad i Scoutnet
-- "&" Lägg till både personens e-postadress som listad i Scoutnet samt Google-konto
+- `@` Lägg till personens Google-konto om den har något, annars hoppa över personen
+- `-` Lägg endast till personens e-postadress som listad i Scoutnet
+- `&` Lägg till både personens e-postadress som listad i Scoutnet samt Google-konto
   om den har något.
 
 Det går också att ställa in i detta fält vilka e-postadressfält från scoutnet
 som ska läggas till
-- "m" Lägg till en medlems primära e-postadress.
-- "f" Lägg till de e-postadresser som är angivet i fälten Anhörig 1,2.
+- `m` Lägg till en medlems primära e-postadress.
+- `f` Lägg till de e-postadresser som är angivet i fälten Anhörig 1,2.
   Alltså vanligtvis föräldrarna.
-- "a" Lägg till en medlems alternativa e-postadress.
-- "e" Lägg till de fält som Scoutnet använder för att skicka till med
+- `a` Lägg till en medlems alternativa e-postadress.
+- `e` Lägg till de fält som Scoutnet använder för att skicka till med
   den inbyggda e-postlistsfunktionen.
 - Om man inte anger något används fälten primär e-postadress, anhörig 1,
   anhörig 2 och alternativ e-postadress.
@@ -31,28 +31,28 @@ I stället för att ange listid på något ställe så anger du en e-postadress 
 komma emellan. Det går bra att både använda listid och e-postadress till samma lista.
 
 ## Inställningar för att komma igång (i Konfiguration.gs)
-- Ändra kårens domännamn på variabeln "domain"
-- Ändra kårens "Kår-ID för webbtjänster" på variabeln "groupId. Hittas i Scoutnet på sidan för
-  Webbkoppling
-- Ändra api-nyckeln med namn api_key_mailinglists som hittas i Scoutnet under
-  Webbkoppling under "Get a csv/xls/json list of members, based on mailing lists you have set up"
-- Skapa ett Google Kalkylark och klistra in webbadressen vid variabeln "spreadsheetUrl_Grupper"
+- Ändra kårens domännamn på variabeln `domain`.
+- Ändra kårens **Kår-ID för webbtjänster** på variabeln `groupId`. Hittas i Scoutnet på sidan för
+  Webbkoppling.
+- Ändra api-nyckeln med namn `api_key_mailinglists` som hittas i Scoutnet under
+  Webbkoppling under **Get a csv/xls/json list of members, based on mailing lists you have set up**.
+- Skapa ett Google Kalkylark och klistra in webbadressen vid variabeln `spreadsheetUrl_Grupper`.
 - Ändra vart e-post som misstänkts för skräppost ska skickas genom att uppdatera variabeln
-  "moderateContentEmail". Om inget anges skickas e-breven till den användare som kör detta program.
+  `moderateContentEmail`. Om inget anges skickas e-breven till den användare som kör detta program.
   Det går inte att ange en av kårens grupper som mottagare, men enskilda e-postadresser och
   Scoutnet-id går bra.
-- Om du gör detta för ett distrikt. Ändra variabeln "organisationType" från "group" till "district".
+- Om du gör detta för ett distrikt. Ändra variabeln `organisationType` från `group` till `district`.
 - Spara filen.
-- Välj funktionen "createHeaders_Grupper" i Grupper.gs och kör den.
+- Välj funktionen `createHeaders_Grupper` i **Grupper.gs** och kör den.
 - Fyll i övriga fält i filen Konfiguration.gs vid behov och möjligt.
 - Klart.
 
 ## Enkelt och avancerat läge
 Det går att ställa in om du vill visa samtliga kolumner i kalkylarket för olika
 inställningar eller endast de grundläggande. Detta för att kunna hålla det enkelt.
-I filen Grupper.gs finns funktionerna enkelLayout() och avanceradLayout() att använda för detta.
+I filen **Grupper.gs** finns funktionerna `enkelLayout()` och `avanceradLayout()` att använda för detta.
 De visar och döljer egentligen bara olika kolumner i kalkylarket, så om man vill
-kan man anropa avanceradLayout() för att visa alla kolumner och sen dölja de man inte önskar.
+kan man anropa `avanceradLayout()` för att visa alla kolumner och sen dölja de man inte önskar.
 
 ## Förtydliga hur man skickar e-brev till en e-postlista
 Du kan ange en sidfot som läggs till i alla e-brev som skickas till listan.
@@ -66,15 +66,14 @@ Kan också förtydliga vilken lista som brevet skickades till och vilka som var 
 Om du vill kan du ställa in att enbart vissa personer ska kunna skicka till en lista,
 att vissa personer ska både kunna skicka och ta emot eller att vissa enbart ska kunna
 ta emot e-post.
-Som standard om du fyller i "Scoutnet-id" och "Synkinställning" under "Kan skicka och
-ta emot" så är listan helt publik och vem som helst kan skicka till den. Du kan se detta
+Som standard om du fyller i **Scoutnet-id** och **Synkinställning** under **Kan skicka och ta emot** så är listan helt publik och vem som helst kan skicka till den. Du kan se detta
 som det vanligaste alternativet.
 Om du däremot önskar att bara specifika personer ska få skicka till listan så anger du
-något Scoutnet-id i cellen under "Kan skicka". Om du önskar att bara kårens e-postdresser
+något Scoutnet-id i cellen under **Kan skicka**. Om du önskar att bara kårens e-postdresser
 (de e-postkonton som finns i kårens Google Workspace) ska kunna skicka till en lista så skriver
-du in ett "@" (snabela) i rutan "Scoutnet-id" under rukriken "Kan skicka".
+du in ett `@` (snabela) i rutan **Scoutnet-id** under rukriken **Kan skicka**.
 
 Om du vill kan du också specificera vilka som ska få skicka och ta emot för en lista genom
-att ange list-ID under rubrikerna "Kan skicka" & "Kan ta emot". Du behöver dock inte ange
+att ange list-ID under rubrikerna **Kan skicka** & **Kan ta emot**. Du behöver dock inte ange
 under alla tre typerna om du inte vill. Du kanske vill att några ska kunna skicka och ta emot,
 till en lista och några andra som bara ska få skicka.

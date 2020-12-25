@@ -5,7 +5,7 @@ Om du saknar något exempel eller behöver hjälp är det bara att mejla emil.oh
 
 ## Grupper - inställningar exempel
 * Hur gör jag om jag bara vill synkronisera grupper / e-postlistor?
-   - Du kör funktionen "Grupper" i filen "Grupper.gs"
+   - Du kör funktionen `Grupper` i filen **Grupper.gs**.
    
 *  Jag vill ha följande e-postlista
    * Bara de med en e-postadress från kåren ska kunna skicka till listan.

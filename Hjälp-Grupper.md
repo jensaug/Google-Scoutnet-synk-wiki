@@ -6,8 +6,7 @@ gruppen manuellt är det enklaste om du tar bort gruppen manuellt och sen kör s
 
 * Vi har en funktionär som inte ska ingå i en arbetsgrupp (t.ex kårstyrelsen) men ändå ska stå
 med på deras e-postlista. Hur lägger jag till personen manuellt till listan?
-  - Alt 1. Du kan lägga till personen i kalkylarket manuellt. I cellen där list-id står för
-  styrelsens e-postlista kan du lägga till ett kommatecken och sen skriva in e-postadressen
+  - Alt 1. Du kan lägga till personen i kalkylarket manuellt. I cellen där list-id står för styrelsens e-postlista kan du lägga till ett kommatecken och sen skriva in e-postadressen
   till funktionären i samma cell.
   - Alt 2. Det går också att lägga till en ny regel till styrelselistan i Scoutnet och där
   ställa in en regel som matchar just denna funktionär. Det alternativet är dock inte något
