@@ -9,6 +9,8 @@ personer i kåren som har en avdelningsroll eller roll på kårnivå och skapar
 användarkonton på kårens G Suite åt dem i den underorganisationen i G Suite som
 man specificerar.
 
+Det skickas inte ut något e-brev till personer när det skapas ett konto för dem. De kan återställa lösenordet för deras konto för att sedan kunna logga in. Återställningsadressen är hämtad från medlemmens profil i Scoutnet. Enklast är dock om kåren väljer att använda [ScoutId](https://etjanster.scout.se/e-tjanster/scoutid/) då inloggningen då automatiskt kommer vara samma som i Scoutnet oavsett om det ändras i Scoutnet.
+
 Om ett användarkonto vid nästkommande synkronisering ej matchar någon person
 som synkroniseras så inaktiveras det specifika kontot.
 
