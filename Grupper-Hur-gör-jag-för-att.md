@@ -6,6 +6,55 @@ Om du saknar något exempel eller behöver hjälp är det bara att mejla emil.oh
 ## Grupper - inställningar exempel
 * Hur gör jag om jag bara vill synkronisera grupper / e-postlistor?
    - Du kör funktionen `Grupper` i filen **Grupper.gs**.
+
+* Exempel på olika typer av vanliga listor
+
+   <table>
+      <thead>
+         <tr>
+            <th colspan=2></th>
+            <th colspan=2>Kan skicka och ta emot</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Namn</td>
+            <td>E-post</td>
+            <td>Scoutnet-id</td>
+            <td>Synkinställning</td>
+         </tr>
+         <tr>
+            <td>SpårarledarePrimär</td>
+            <td>spararledare.primar@hasselbyscout.se</td>
+            <td>1910&rule_id=1930 (ledare på avdelningen alltså har rollen)</td>
+            <td>-m</td>
+         </tr>
+         <tr>
+            <td>SpårarledareWorkspacekonto</td>
+            <td>spararledare.gworkspace@hasselbyscout.se</td>
+            <td>1910&rule_id=1930 (ledare på avdelningen alltså har rollen)</td>
+            <td>@</td>
+         </tr>
+         <tr>
+            <td>SpårarledarePrimärOchWorkspacekonto</td>
+            <td>spararledare.primarochgworkspace@hasselbyscout.se</td>
+            <td>1910&rule_id=1930 (ledare på avdelningen alltså har rollen)</td>
+            <td>&m</td>
+         </tr>
+         <tr>
+            <td>SpårarFöräldrar</td>
+            <td>spararforaldrar@hasselbyscout.se</td>
+            <td>1910&rule_id=1940 (person på avdelning under 18 år e-brev till mamma och pappa)</td>
+            <td>-f</td>
+         </tr>
+         <tr>
+            <td>SpårarFöräldrarOchLedare</td>
+            <td>spararforaldrarochledare@hasselbyscout.se</td>
+            <td>spararforaldrar@hasselbyscout.se, spararledare.primar@hasselbyscout.se</td>
+            <td></td>
+         </tr>
+      </tbody>
+   </table>
    
 *  Jag vill ha följande e-postlista
    * Bara de med en e-postadress från kåren ska kunna skicka till listan.
