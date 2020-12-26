@@ -56,11 +56,10 @@ kan man anropa `avanceradLayout()` för att visa alla kolumner och sen dölja de
 
 ## Förtydliga hur man skickar e-brev till en e-postlista
 Du kan ange en sidfot som läggs till i alla e-brev som skickas till listan.
-Bra till t.ex en e-postlista för ledare eller utmanare så att alla vet hur de ska mejla
-för att skicka till alla. Detta kanske man glömmer bort att nämna för nya och om man vill
+- Bra till t.ex för en e-postlista för ledare eller utmanare så att alla vet hur de ska göra för att skicka e-brev till alla andra på listan. Detta kanske man glömmer bort att nämna för nya på listan och om man vill
 slippa tänka på att komma ihåg att nämna det när det kommer någon ny så står det då i
 alla e-brev som de får skickat till sig via e-postlistan.
-Kan också förtydliga vilken lista som brevet skickades till och vilka som var mottagarna.
+- Kan också förtydliga vilken lista som brevet skickades till och vilka som var mottagarna.
 
 ## Begränsa åtkomst för att skicka och ta emot e-post
 Om du vill kan du ställa in att enbart vissa personer ska kunna skicka till en lista,
