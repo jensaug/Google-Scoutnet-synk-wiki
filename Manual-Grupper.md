@@ -78,3 +78,6 @@ under alla tre typerna om du inte vill. Du kanske vill att några ska kunna skic
 till en lista och några andra som bara ska få skicka.
 
 **Observera att alla som på något sätt har en behörighet specificerad för sig för en lista läggs till i gruppen. Detta medför att de också kommer få behörighet till en delad enhet om gruppen ges behörighet för den oavsett om de t.ex. enbart får skicka till listan eller enbart ta emot från listan.**
+
+# Exempel
+Exempel på olika inställningar för uppsättning av grupper hittas [här](./Grupper-Hur-gör-jag-för-att).
