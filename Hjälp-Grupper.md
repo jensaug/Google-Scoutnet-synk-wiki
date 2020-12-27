@@ -55,3 +55,14 @@ med på deras e-postlista. Hur lägger jag till personen manuellt till listan?
 
 * När jag skapar en e-postlista i Scoutnet finns det flera alternativ för **E-postmottagare** att välja på för vilka fält som ska användas för mottagare. Vad ska jag välja?
   - Välj alla fält tillgängliga och sköt dessa inställningar via detta program i stället.
+
+* Går det att börja synkronisera en grupp som tidigare är skapad manuellt?
+  - Ja, det går men rekommenderas inte med anledning av risken att göra fel och råka radera gruppen och dess logg över tidigare e-brev skickade till den.
+  - **Alt 1.** Mest säkra lösningen. Byt namn och e-postadress på den gamla gruppen så att den finns kvar för att sen kunna skapa sen en ny med programmet. Observera att när du byter namn på en grupp läggs det gamla namnet till som ett e-postalias till den gruppen, så du måste ta bort det för att kunna skapa en ny grupp med den e-postadressen. Du har nu kvar e-postloggen via den gamla gruppen och kan kanske ta bort den efter något år eller när det ej längre är aktuellt.
+  - **Alt 2.** Den faran som finns med detta alternativ är att gruppen råkar raderas och skapas på nytt då programmet gör så av tekniska skäl om t.ex e-postadressen ändras.
+    1. Öppna upp kalkylarket och ta fram den gömda kolumnen **J**.
+       - Denna kolumn/cell innehåller id-numret hos Google för en specifik googlegrupp och används för att identifiera vilken grupp som är på respektive rad i kalkylarket då det ju kan hända att man byter e-postadress på en grupp; men id-numret är ändå sig likt.
+    1. Du tar sedan och klistrar in id-numret för den grupp du ska konfigurera.
+        - Du hittar id-numret genom att gå in på **admin.google.com** --> **Enheter** --> **Grupper** och där välja en grupp och så ser du id-numret i url:en. Om du gör detta för en grupp som du redan skapat med hjälp av programmet och kalkylarket kan du kontrollera att det blir rätt nummer.
+        - Du kan också få fram en lista över id-nummer för samtliga grupper genom att köra funktionen `TestListAllGroups` i filen `Grupper.gs`.
+    1. Du tar sedan och klistrar in detta id-nummer i kolumn **J** på den tomma raden och **samma namn** och **samma e-postadress** som gruppen har sedan innan i kolumn **A** & **B**.
