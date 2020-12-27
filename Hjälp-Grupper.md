@@ -1,4 +1,7 @@
 # Grupper - Hjälp
+* Vad är rule_id **1930** och **1940** som används i exemplen på [följande](./../Grupper-Hur-gör-jag-för-att) sida?
+  - Det är exempel på regler för en e-postlista. En lista kan bestå av en eller flera olika regler som tillsammans bygger upp en lista genom inkludering och exkludering av olika regler. **1930** och **1940** är t.ex regler för listan **1910**. Om du går in på kårens sida i Scoutnet under **Webbkoppling** --> **API-nycklar och endpoints** --> **Endpoints för maillista [kårens namn]** kan du se alla id för listor och deras regler.
+
 * Vi har satt upp en ny grupp men får det inte att synkronisera. E-postadressen är rödmarkerad
 i google kalkylarket efter att skriptet körts. Vad är fel?
   - Den vanligaste orsaken är att e-postadressen för gruppen redan används. Om du har skapat

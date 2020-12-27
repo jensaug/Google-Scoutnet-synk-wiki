@@ -44,7 +44,7 @@ Om du saknar något exempel eller behöver hjälp är det bara att mejla emil.oh
          <tr>
             <td>SpårarFöräldrar</td>
             <td>spararforaldrar@hasselbyscout.se</td>
-            <td>1910&rule_id=1940 (person på avdelning under 18 år e-brev till mamma och pappa)</td>
+            <td>1910&rule_id=1940 (person på avdelning under 18 år)</td>
             <td>-f</td>
          </tr>
          <tr>
@@ -238,6 +238,38 @@ Om du saknar något exempel eller behöver hjälp är det bara att mejla emil.oh
             <td></td>
             <td>scoutnet@scouterna.se, scoutid@scouterna.se</td>
             <td></td>
+         </tr>
+      </tbody>
+   </table>
+
+*  Jag vill ha följande e-postlista
+   - Enbart ledarna på aktuell avdelning kan skicka till listan från den adressen som är listad som deras primära e-postadress i Scoutnet.
+   - E-brev ska enbart skickas till föräldrar för scouter på aktuell avdelning.
+  
+  <table>
+      <thead>
+         <tr>
+            <th colspan=2>Kan skicka och ta emot</th>
+            <th colspan=2>Kan skicka</th>
+            <th colspan=2>Kan ta emot</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Scoutnet-id</td>
+            <td>Synkinställning</td>
+            <td>Scoutnet-id</td>
+            <td>Synkinställning</td>
+            <td>Scoutnet-id</td>
+            <td>Synkinställning</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td>1910&rule_id=1930 (ledare på avdelningen alltså har rollen)</td>
+            <td>-m</td>
+            <td>1910&rule_id=1940 (person på avdelning under 18 år)</td>
+            <td>-f</td>
          </tr>
       </tbody>
    </table>
