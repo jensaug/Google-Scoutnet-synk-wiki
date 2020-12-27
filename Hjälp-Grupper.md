@@ -30,4 +30,7 @@ med på deras e-postlista. Hur lägger jag till personen manuellt till listan?
   - Det är av tekniska skäl för att programmet ska fungera korrekt och har samband med vilken behörighet som är inställd för respektive person i kalkylarket.
     - Rollen **Medlem** - **Bara ta emot**
     - Rollen **Ansvarig** - **Bara skicka** eller **Skicka och ta emot**
-    - Rollen **Ägare** - **Bara skicka**, **Skicka och ta emot**. Denna roll används för den e-postadressen som fylls i variabeln `moderateContentEmail`. Ingen vanligt roll alltså.
+    - Rollen **Ägare** - **Bara skicka**, **Skicka och ta emot**. Denna roll används för den e-postadressen som fylls i variabeln `moderateContentEmail` i filen `Konfiguration.gs`. Ingen vanligt roll alltså.
+
+* Varför läggs det till personer i grupppen med rollen **Ägare** fastän jag inte har lagt till dem i gruppen?
+  - Det är av tekniska skäl och används för de som är tillagda som skräppostmoderator för en grupp. Du kan antingen specificera för varje grupp i kalkylarket vilken eller vilka e-postadresser det ska vara eller ange det i variabeln `moderateContentEmail` i filen `Konfiguration.gs` för det som ska gälla som standard. Om inget är angivet i `moderateContentEmail` heller används e-postadressen för den som kör skriptet.
