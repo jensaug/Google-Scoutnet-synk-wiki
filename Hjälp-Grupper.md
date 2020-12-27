@@ -34,3 +34,7 @@ med på deras e-postlista. Hur lägger jag till personen manuellt till listan?
 
 * Varför läggs det till personer i grupppen med rollen **Ägare** fastän jag inte har lagt till dem i gruppen?
   - Det är av tekniska skäl och används för de som är tillagda som skräppostmoderator för en grupp. Du kan antingen specificera för varje grupp i kalkylarket vilken eller vilka e-postadresser det ska vara eller ange det i variabeln `moderateContentEmail` i filen `Konfiguration.gs` för det som ska gälla som standard. Om inget är angivet i `moderateContentEmail` heller används e-postadressen för den som kör skriptet.
+
+* Jag vill gärna göra en inställning för en grupp som inte går att göra med programmet. Hur gör jag?
+  - Om du för aktuell rad i kalkylarket klickar på **Länk** och där klickar på **Gruppinställningar** kan du göra dina inställningar. Testa köra programmet och se om de finns kvar efter att programmet har kört och om så kan du göra det för fler grupper.
+  - Om du tror att det är en inställning som kan uppskattas av flera får du gärna höra av dig så kanske vi kan lägga till det i programmet. 
