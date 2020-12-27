@@ -8,6 +8,10 @@
 * Var hittar jag **groupId**?
   - Om du går in på kårens sida i Scoutnet under **Webbkoppling** --> kan du se **Kår-ID för webbtjänster**, det är den.
 
+* Hur lägger jag manuellt till en person till en lista som inte egentligen hör hemma där med tanke på dennes roll? T.ex lägga till en icke styrelsemedlem till styrelsens e-postlista.
+  - **Alt 1.** Du kan lägga till en e-postadress manuellt i någon av kolumnerna **Scoutnet-id** i kalkylarket. Om du behöver lägga till flera lägger du ett kommatecken emellan varje e-postadress.
+  - **Alt 2.** Du kan skapa en ny regel för listan i Scoutnet som matchar en specifik person. Nackdelen är att man sällan brukar ta en titt här efter att allt är uppsatt och antagligen kommer glömma bort regeln för denna person när personen inte längre bör stå med på listan. Fördelen är att personen tar bort från listan om denne avregistreras från kåren. Regeln kommer dock finnas kvar tills vidare. Detta alternativ fungerar endast för att lägga till medlemmar manuellt på listan och inte icke medlemmar.
+
 * Vad är rule_id **1930** och **1940** som används i exemplen på [följande](./Grupper-Hur-gör-jag-för-att) sida?
   - Det är exempel på regler för en e-postlista. En lista kan bestå av en eller flera olika regler som tillsammans bygger upp en lista genom inkludering och exkludering av olika regler. **1930** och **1940** är t.ex regler för listan **1910**. Om du går in på kårens sida i Scoutnet under **Webbkoppling** --> **API-nycklar och endpoints** --> **Endpoints för maillista [kårens namn]** kan du se alla id för listor och deras regler.
 
