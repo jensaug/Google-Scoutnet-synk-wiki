@@ -36,5 +36,13 @@ med på deras e-postlista. Hur lägger jag till personen manuellt till listan?
   - Det är av tekniska skäl och används för de som är tillagda som skräppostmoderator för en grupp. Du kan antingen specificera för varje grupp i kalkylarket vilken eller vilka e-postadresser det ska vara eller ange det i variabeln `moderateContentEmail` i filen `Konfiguration.gs` för det som ska gälla som standard. Om inget är angivet i `moderateContentEmail` heller används e-postadressen för den som kör skriptet.
 
 * Jag vill gärna göra en inställning för en grupp som inte går att göra med programmet. Hur gör jag?
-  - Om du för aktuell rad i kalkylarket klickar på **Länk** och där klickar på **Gruppinställningar** kan du göra dina inställningar. Testa köra programmet och se om de finns kvar efter att programmet har kört och om så kan du göra det för fler grupper.
-  - Om du tror att det är en inställning som kan uppskattas av flera får du gärna höra av dig så kanske vi kan lägga till det i programmet. 
+  - Om du för aktuell rad i kalkylarket klickar på **Länk** och där klickar på **Gruppinställningar** kan du göra dina inställningar. Testa köra programmet och se om de finns kvar efter att programmet har kört och om så kan du göra inställningen för fler grupper.
+  - Om du tror att det är en inställning som kan uppskattas av flera får du gärna höra av dig så kanske vi kan lägga till det i programmet.
+
+* Jag har gjort grupper där vissa personer inte ska få några e-brev men ska kunna skicka till listan, t.ex. att styrelsen kan skicka till listan. Varför får de en mötesbokning jag skickar till listan fastän de inte ska få några e-brev och hur löser jag det?
+  - Detta har egentligen inget med detta program att göra utan har att göra med hur Google Grupper hanterar mötesbokningar. Enligt [följande](https://support.google.com/calendar/answer/172013?hl=en) är det så att om du som skickar mötesbokningen har behörighet att visa medlemmarna i gruppen kommer inbjudan att skickas ut till respektive medlem i gruppen oavsett hur inställningen för att ta emot e-brev via gruppen är. Om du däremot inte har behörighet att visa medlemmarna i gruppen skickas inbjudan till gruppen som till de vanliga.
+  - Förslag till lösning är att skapa en renodlad grupp för de som ska få mötesbokningarna och som enbart innehåller de personer som är tänkt att få mötesbokningarna.
+  Skapa sen en kalender att använda för denna specifika grupp, t.ex en kalender för spårarledarna och lägg till behörighet för deras grupp till denna kalender.
+
+* När jag skapar en e-postlista i Scoutnet finns det flera alternativ för **E-postmottagare** att välja på för vilka fält som ska användas för mottagare. Vad ska jag välja?
+  - Välj alla fält tillgängliga och sköt dessa inställningar via detta program i stället.
