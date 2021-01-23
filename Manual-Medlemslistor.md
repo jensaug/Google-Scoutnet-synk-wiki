@@ -1,4 +1,4 @@
-# Google Medlemslistor - synkronisering med Scoutnet
+# Medlemslistor och utskick - synkronisering med Scoutnet
 Programmet kan användas för följande:
 1. Synkronisera e-postlistor från Scoutnet till ett Google kalkylark.
 2. Skicka e-brev till de listade i en medlemslista i ett Google kalkylark.
@@ -18,7 +18,7 @@ Programmet kan användas för följande:
   Webbkoppling under **Get a csv/xls/json list of members, based on mailing lists you have set up**.
 - Skapa ett Google Kalkylark och klistra in webbadressen vid variabeln `spreadsheetUrl_Medlemslistor`.
 - Spara filen.
-- Välj funktionen `skapaRubrikerMedlemslistor` i **Start_funktioner.gs** och kör den.
+- Välj funktionen **skapaRubrikerMedlemslistor** i **Start_funktioner.gs** och kör den.
 - Klart.
 
 ## Uppsättning av en medlemslista och utskick via e-brev

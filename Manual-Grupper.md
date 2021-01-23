@@ -43,7 +43,7 @@ komma emellan. Det går bra att både använda listid och e-postadress till samm
   Scoutnet-id går bra.
 - Om du gör detta för ett distrikt. Ändra variabeln `organisationType` från `group` till `district`.
 - Spara filen.
-- Välj funktionen `skapaRubrikerGrupper` i **Start_funktioner.gs** och kör den.
+- Välj funktionen **skapaRubrikerGrupper** i **Start_funktioner.gs** och kör den.
 - Fyll i övriga fält i filen Konfiguration.gs vid behov och möjligt.
 - Klart.
 
