@@ -66,4 +66,4 @@ Observera att du inte behöver ange data i samtliga kolumner.
 - Skicka e-brev varje år till de som har flera personer i samma hushåll som är medlemmar och som får medlemstidning om att de bör se över om alla verkligen behöver få en egen medlemstidning.
 
 # Exempel
-Exempel på olika inställningar för uppsättning av grupper hittas [här](./Medlemslistor-Hur-gör-jag-för-att).
+Exempel på olika inställningar för uppsättning av medlemslistor hittas [här](./Medlemslistor-Hur-gör-jag-för-att).
