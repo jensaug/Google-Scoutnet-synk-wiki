@@ -4,6 +4,7 @@ Välkommen till Google-Scoutnet-synk wiki!
 - [Migrera från Google Drive Min enhet till Delade enheter](https://github.com/Scouterna/Google-Scoutnet-synk/tree/master/Google-drive-migrering)
 - [Användare - synkronisering med Scoutnet](Manual-Användare)
 - [Grupper/E-postlistor - synkronisering med Scoutnet](Manual-Grupper)
+- [Medlemslistor - skicka personliga e-brev](Manual-Medlemslistor)
 
 # Exempel
 - [Användare - Hur gör jag för att...](Användare-Hur-gör-jag-för-att)
