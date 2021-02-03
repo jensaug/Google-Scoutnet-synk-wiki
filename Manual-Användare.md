@@ -6,10 +6,14 @@ parenteser inom variabelnamnet. Se exemplen i filen.
 
 Om inget id-nummer för en e-postlista anges så tolkar programmet det som alla
 personer i kåren som har en avdelningsroll eller roll på kårnivå och skapar
-användarkonton på kårens G Suite åt dem i den underorganisationen i G Suite som
-man specificerar.
+användarkonton på kårens Google Workspace åt dem i den underorganisationen i
+Google Workspace som man specificerar.
 
-Det skickas inte ut något e-brev till personer när det skapas ett konto för dem. De kan återställa lösenordet för deras konto för att sedan kunna logga in. Återställningsadressen är hämtad från medlemmens profil i Scoutnet. Enklast är dock om kåren väljer att använda [ScoutId](https://etjanster.scout.se/e-tjanster/scoutid/) då inloggningen då automatiskt kommer vara samma som i Scoutnet oavsett om det ändras i Scoutnet.
+Det skickas inte ut något e-brev till personer när det skapas ett konto för dem.
+De kan återställa lösenordet för deras konto för att sedan kunna logga in.
+Återställningsadressen är hämtad från medlemmens profil i Scoutnet. Enklast är dock
+om kåren väljer att använda [ScoutId](https://etjanster.scout.se/e-tjanster/scoutid/)
+då inloggningen då automatiskt kommer vara samma som i Scoutnet oavsett om det ändras i Scoutnet.
 
 Om ett användarkonto vid nästkommande synkronisering ej matchar någon person
 som synkroniseras så inaktiveras det specifika kontot.
@@ -30,6 +34,9 @@ där X motsvarar en siffra från 1-5.
   **Get a detailed csv/xls/json list of all members**
 - Om du gör detta för ett distrikt. Ändra variabeln `organisationType` från `group`
   till `district`.
+- I **Adminkonsolen** under **Organisationsenheter** skapar du en ny organisationsenhet som heter
+  **Scoutnet** och ställer in din kårs namn som överordnad organisationsenhet vilket bör vara förvalt alternativ.
+
 
 # Övrigt
 - Avstängda konton, alltså de som inte längre matchar de som ska synroniseras flyttas
