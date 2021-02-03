@@ -8,6 +8,15 @@
 * Var hittar jag **groupId**?
   - Om du går in på kårens sida i Scoutnet under **Webbkoppling** --> kan du se **Kår-ID för webbtjänster**, det är den.
 
+* Vilka inställningar ska jag göra i Scoutnet när jag skapar en e-postlista där?
+  - **Namn på e-postlistan** - Bra att ange så att du har koll.
+  - **Visa listnamnet för mottagarna** - Lämna tom ruta.
+  - **Beskrivning av e-postlistan** - Bra att ange något om att den används av Google Workspace så inte någon råkar radera den av misstag.
+  - **Behörighetsnivå** - **Fördefinerad lista**.
+  - **Typ av lista** - **Dynamisk lista**. Annars kommer den aldrig uppdateras!
+  - **Öppen för inkommande e-post** - Lämna tom ruta.
+  - **Epostmottagare** - **Primär e-post + kopior enligt medlemsprofil**
+
 * Hur lägger jag manuellt till en person till en lista som inte egentligen hör hemma där med tanke på dennes roll? T.ex lägga till en icke styrelsemedlem till styrelsens e-postlista.
   - **Alt 1.** Du kan lägga till en e-postadress manuellt i någon av kolumnerna **Scoutnet-id** i kalkylarket. Om du behöver lägga till flera lägger du ett kommatecken emellan varje e-postadress.
   - **Alt 2.** Du kan skapa en ny regel för listan i Scoutnet som matchar en specifik person. Nackdelen är att man sällan brukar ta en titt här efter att allt är uppsatt och antagligen kommer glömma bort regeln för denna person när personen inte längre bör stå med på listan. Fördelen är att personen tar bort från listan om denne avregistreras från kåren. Regeln kommer dock finnas kvar tills vidare. Detta alternativ fungerar endast för att lägga till medlemmar manuellt på listan och inte icke medlemmar.
