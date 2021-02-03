@@ -67,3 +67,6 @@ Observera att du inte behöver ange data i samtliga kolumner.
 
 # Exempel
 Exempel på olika inställningar för uppsättning av medlemslistor hittas [här](./Medlemslistor-Hur-gör-jag-för-att).
+
+# Hjälp
+Hjälp på vanliga frågor hittas [här](./Hjälp-Medlemslistor).

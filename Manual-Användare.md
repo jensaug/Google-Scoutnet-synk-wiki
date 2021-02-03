@@ -44,3 +44,6 @@ där X motsvarar en siffra från 1-5.
 
 # Exempel
 Exempel på olika inställningar för uppsättning av användare hittas [här](./Användare-Hur-gör-jag-för-att).
+
+# Hjälp
+Hjälp på vanliga frågor hittas [här](./Hjälp-Användare).

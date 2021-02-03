@@ -81,3 +81,6 @@ till en lista och några andra som bara ska få skicka.
 
 # Exempel
 Exempel på olika inställningar för uppsättning av grupper hittas [här](./Grupper-Hur-gör-jag-för-att).
+
+# Hjälp
+Hjälp på vanliga frågor hittas [här](./Hjälp-Grupper).
