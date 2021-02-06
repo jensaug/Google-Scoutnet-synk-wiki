@@ -18,8 +18,7 @@ som ska läggas till
 - `f` Lägg till de e-postadresser som är angivet i fälten Anhörig 1,2.
   Alltså vanligtvis föräldrarna.
 - `a` Lägg till en medlems alternativa e-postadress.
-- `e` Lägg till de fält som Scoutnet använder för att skicka till med
-  den inbyggda e-postlistsfunktionen.
+- `e` Lägg till primär e-postadress + kopior enligt medlemsprofil i Scoutnet.
 - Om man inte anger något används fälten primär e-postadress, anhörig 1,
   anhörig 2 och alternativ e-postadress.
 
