@@ -20,6 +20,12 @@
 * Vad är rule_id **1930** och **1940** som används i exemplen på [följande](./Grupper-Hur-gör-jag-för-att) sida?
   - Det är exempel på regler för en e-postlista. En lista kan bestå av en eller flera olika regler som tillsammans bygger upp en lista genom inkludering och exkludering av olika regler. **1930** och **1940** är t.ex regler för listan **1910**. Om du går in på kårens sida i Scoutnet under **Webbkoppling** --> **API-nycklar och endpoints** --> **Endpoints för maillista [kårens namn]** kan du se alla id för listor och deras regler.
 
+* Vi använder Scout-id för inloggning till Google Workspace och vill kunna använda funktionsadresser för t.ex vår kassör; Hur gör vi då det inte går att logga in med Scout-id för det kontot?
+  - **Alt 1.** Lägg upp funktionsadressen som en google-grupp/e-postlista och koppla den till motsvarande e-postlista/roll i Scoutnet så slipper ni uppdatera i framtiden. Nackdelen är att personen inte kan skicka från e-postadressen för närvarande.
+  - **Alt 2.** Lägg manuellt till funktionsadressen till ett existerande användarkonto. Detta är bra för konton som ska kunna skicka och ta emot för funktionsadressen så att inte svar kommer från dennes privata e-postadress. Nackdelen är att vid byte av funktionär måste detta ändras manuellt i Google Workspace.  
+  - **Alt 3.** Vid användning av Scout-id eller annan SSO-lösning för Google Workspace tvingas samtliga använda förutom avancerade administratörer att logga in på det sättet. Då det inte finns en medlem i Scoutnet att matcha till funktionsadressen går det inte att logga in med Scout-id, så en lösning är att göra kontot till avancerad administratör. Säkerhetsmässigt är detta inget som rekommenderas.
+  - **Alt 4.** Om du bara behöver logga in en gång för att sätta upp något kan du testa stänga av Scout-id, logga in, sätta på Scout-id igen så borde du fortsätta vara inloggad tills din session för kontot går ut.
+
 * Vi har satt upp en ny grupp men får det inte att synkronisera. E-postadressen är rödmarkerad
 i google kalkylarket efter att skriptet körts. Vad är fel?
   - Den vanligaste orsaken är att e-postadressen för gruppen redan används. Om du har skapat
