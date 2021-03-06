@@ -17,10 +17,6 @@
   - **Öppen för inkommande e-post** - Lämna tom ruta.
   - **Epostmottagare** - **Primär e-post + kopior enligt medlemsprofil**
 
-* Hur lägger jag manuellt till en person till en lista som inte egentligen hör hemma där med tanke på dennes roll? T.ex lägga till en icke styrelsemedlem till styrelsens e-postlista.
-  - **Alt 1.** Du kan lägga till en e-postadress manuellt i någon av kolumnerna **Scoutnet-id** i kalkylarket. Om du behöver lägga till flera lägger du ett kommatecken emellan varje e-postadress.
-  - **Alt 2.** Du kan skapa en ny regel för listan i Scoutnet som matchar en specifik person. Nackdelen är att man sällan brukar ta en titt här efter att allt är uppsatt och antagligen kommer glömma bort regeln för denna person när personen inte längre bör stå med på listan. Fördelen är att personen tar bort från listan om denne avregistreras från kåren. Regeln kommer dock finnas kvar tills vidare. Detta alternativ fungerar endast för att lägga till medlemmar manuellt på listan och inte icke medlemmar.
-
 * Vad är rule_id **1930** och **1940** som används i exemplen på [följande](./Grupper-Hur-gör-jag-för-att) sida?
   - Det är exempel på regler för en e-postlista. En lista kan bestå av en eller flera olika regler som tillsammans bygger upp en lista genom inkludering och exkludering av olika regler. **1930** och **1940** är t.ex regler för listan **1910**. Om du går in på kårens sida i Scoutnet under **Webbkoppling** --> **API-nycklar och endpoints** --> **Endpoints för maillista [kårens namn]** kan du se alla id för listor och deras regler.
 
@@ -31,8 +27,7 @@ gruppen manuellt är det enklaste om du tar bort gruppen manuellt och sen kör s
 
 * Vi har en funktionär som inte ska ingå i en arbetsgrupp (t.ex kårstyrelsen) men ändå ska stå
 med på deras e-postlista. Hur lägger jag till personen manuellt till listan?
-  - **Alt 1.** Du kan lägga till personen i kalkylarket manuellt. I cellen där list-id står för styrelsens e-postlista kan du lägga till ett kommatecken och sen skriva in e-postadressen
-  till funktionären i samma cell.
+  - **Alt 1.** Du kan lägga till en e-postadress manuellt i någon av kolumnerna **Scoutnet-id** i kalkylarket. Om du behöver lägga till flera lägger du ett kommatecken emellan varje e-postadress.
   - **Alt 2.** Det går också att lägga till en ny regel till styrelselistan i Scoutnet och där
   ställa in en regel som matchar just denna funktionär. Det alternativet är dock inte något
   som rekommenderas då det gissningsvis är stor chans att ni kommer glömma bort att ta bort
@@ -40,7 +35,8 @@ med på deras e-postlista. Hur lägger jag till personen manuellt till listan?
   specifik lista i Scoutnet. Om personen dock har en specifik roll, t.ex. revisor/anställd och
   att det är därför som ni tycker personen bör få alla styrelsebrev är tipset att skapa en ny
   lista i Scoutnet för detta, alternativ en ny regel för samma lista i Scoutnet. Detta då allt
-  då blir kopplat till en specifik roll och inte en specifik person.
+  då blir kopplat till en specifik roll och inte en specifik person. Detta alternativ fungerar
+  endast för att lägga till medlemmar manuellt på listan och inte icke medlemmar.
 
 * Varför blir personer som jag satt att de bara ska kunna skicka till listan medlemmar i gruppen?
   - Samtliga personer som har någon definerad behörighet för en grupp läggs till i gruppen. T.ex bara att kunna skicka till listan. Om du för aktuell rad för gruppen i kalkylarket klickar på **Länk** skickas du till en sida där du får en överblick över samtliga som är tillagda till gruppen och vilka behörigheter de har.
