@@ -14,6 +14,7 @@ Välkommen till Google-Scoutnet-synk wiki!
 - [Hjälp - Allmänt](Hjälp)
 - [Hjälp - Användare](Hjälp-Användare)
 - [Hjälp - Grupper](Hjälp-Grupper)
+- [Hjälp - Medlemslistor](Hjälp-Medlemslistor)
 - [Felmeddelanden](Felmeddelanden)
 - [Ny version - Hur du gör för att uppgradera](Uppdatera-version)
 - [Tekniska förtydliganden](Tekniska-förtydliganden)
