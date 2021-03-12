@@ -11,6 +11,10 @@
    senaste versionen av programmet.
 1. Lägg ett ärende under **Issues** eller mejla emil.ohman@scouterna.se
 
+## Hjälp - Allmänt
+* Vilken roll i Scoutnet bör jag har för Scoutnet synk?
+  - **IT-ansvarig** fungerar om du inte redan har någon hög behörighet såsom t.ex **Medlemsregistrerare**. Du behöver kunna skapa e-postlistor i Scoutnet samt få fram information för att kunna använda Scoutnets API.
+
 ## Google Drive - exempel
 Att koppla ihop grupper med delade enheter på Google Drive sker manuellt, men du kan använda grupperna som skapats enligt ovan för enkel uppdatering av åtkomst.
 Om du döper om själva gruppen, t.ex. e-postadressen, _kan_ gruppen tappa åtkomst till mappen. Detta då gruppen tas bort och en ny skapas med det nya namnet.
