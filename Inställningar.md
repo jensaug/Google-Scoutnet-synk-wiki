@@ -19,8 +19,8 @@
 1. Skapa en egen kopia av kalkylarket genom att trycka på **Arkiv-->Kopiera** och placera den på lämpligt ställe.
 1. Du hittar konfigurationsfilen `Konfiguration.gs` i menyn i kalkylarket under **Tillägg-->Apps Script**.  
 1.  Gör inställningar enligt följande för respektive skript för att sätta upp dem.
-   [Användare](https://github.com/Scouterna/Google-Scoutnet-synk/wiki/Manual-Användare#inställningar-för-att-komma-igång-i-konfigurationgs), 
-   [Grupper](https://github.com/Scouterna/Google-Scoutnet-synk/wiki/Manual-Grupper#inställningar-för-att-komma-igång-i-konfigurationgs), [Medlemslistor](https://github.com/Scouterna/Google-Scoutnet-synk/wiki/Manual-Medlemslistor#inställningar-för-att-komma-igång-i-konfigurationgs)
+   [Användare](Manual-Användare#inställningar-för-att-komma-igång-i-konfigurationgs), 
+   [Grupper](Manual-Grupper#inställningar-för-att-komma-igång-i-konfigurationgs), [Medlemslistor](Manual-Medlemslistor#inställningar-för-att-komma-igång-i-konfigurationgs)
 1.  Kör programmen genom att öppna filen **Start_funktioner.gs** och kör önskad funktion för att se att de olika skripten fungerar som de ska.
 Du kan också göra inställningar att t.ex enbart vissa rader grupper eller medlemslistor synkroniseras vid olika tillfällen.
 För standardfunktioner kör du dom enklast via kalkylarket under övre menyn under
