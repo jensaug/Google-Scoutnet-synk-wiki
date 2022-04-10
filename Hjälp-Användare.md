@@ -27,5 +27,3 @@
   Du kan se om hon är med i listan i Scoutnet genom att kolla i Scoutnet under **Kårsidan-->E-postlistor** och sen för aktuell e-postlista **Alternativ->Visa lista över mottagare** (om du har tillräcklig behörighet)
   - **Alt 2.** Om det inte tidigare heller har gått att få användarens konto på rätt plats i organisationsstrukturen är det gissningsvis så att ni tidigare har använt Google Workspace i kåren och gjort något fel med just denna medlems konto för att få synkroniseringen att fungera. T.ex. att
   personen ligger under fel organisationsenhet (**Scoutnet**) eller att medlemsnummer inte är infört på rätt plats.
-
-
