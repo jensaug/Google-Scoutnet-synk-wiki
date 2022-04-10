@@ -1,5 +1,8 @@
 Välkommen till Google-Scoutnet-synk wiki!
 
+# Inställningar
+- [Inställningar](Inställningar)
+
 # Manual
 - [Migrera från Google Drive Min enhet till Delade enheter](https://github.com/Scouterna/Google-Scoutnet-synk/tree/master/Google-drive-migrering)
 - [Användare - synkronisering med Scoutnet](Manual-Användare)
