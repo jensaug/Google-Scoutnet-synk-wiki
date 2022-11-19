@@ -1,6 +1,6 @@
 # Google användarkonton - synkronisering med Scoutnet
 Synkroniserar personer som är med på e-postlistor från Scoutnet genom att man
-anger id-nummret för e-postlistan i filen **Konfiguration.gs** i variabeln `userAccountConfig`.
+anger id-nummret för e-postlistan i filen **Konfiguration.gs** i variabeln `KONFIG_OBJECT.USER_ACCOUNT_CONFIG`.
 Det går bra att ange flera e-postlistor med kommatecken samt skriva kommentarer med
 parenteser inom variabelnamnet. Se exemplen i filen.
 
@@ -19,20 +19,20 @@ Om ett användarkonto vid nästkommande synkronisering ej matchar någon person
 som synkroniseras så inaktiveras det specifika kontot.
 
 Om personen senare matchas aktiveras kontot igen. Det är bara konton som finns
-i organisationsstrukturen **Scoutnet** i G Suite som berörs vid en synkronisering.
+i organisationsstrukturen **Scoutnet** i Google Workspace som berörs vid en synkronisering.
 
 Användarkonton skapas på formen fornamn.efternamn@domännamn.se
 
 Om det finns personer som har samma namn (för- och efternamn) angivet i Scoutnet
 kommer de som skapas som nr2 osv skapas på formen fornamn.efternamnX@domännamn.se
-där X motsvarar en siffra från 1-5.
+där X motsvarar en siffra från 1-5. (Siffran 5 är satt just för att det inte ska skapas oändligt många användarkonton om något skulle bli fel)
 
 ## Inställningar för att komma igång (i Konfiguration.gs)
-- Ändra kårens domän namn på variabeln `domain`.
+- Ändra kårens domän namn på variabeln `KONFIG_OBJECT.DOMAIN`.
 - Ändra kårens grupp-id som finns angivet i Scoutnet på sidan för Webbkoppling
 - Ändra api-nyckeln som under Webbkoppling i Scoutnet står under
   **Get a detailed csv/xls/json list of all members**
-- Om du gör detta för ett distrikt. Ändra variabeln `organisationType` från `group`
+- Om du gör detta för ett distrikt. Ändra variabeln `KONFIG_OBJECT.ORGANISATION_TYPE` från `group`
   till `district`.
 - I **Adminkonsolen** under **Organisationsenheter** skapar du en ny organisationsenhet som heter
   **Scoutnet** och ställer in din kårs namn som överordnad organisationsenhet vilket bör vara förvalt alternativ.

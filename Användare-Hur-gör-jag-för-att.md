@@ -5,4 +5,4 @@ Om du saknar något exempel eller behöver hjälp är det bara att mejla emil.oh
 
 ## Användare - inställningar exempel
 *  Hur gör jag om jag bara vill synkronisera användare?
-   - Du kör funktionen `Anvandare` i filen **Anvandare.gs**.
+   - Du kör funktionen `synkroniseraAnvandare` i filen **Anvandare.gs**.
