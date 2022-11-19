@@ -54,16 +54,16 @@ med på deras e-postlista. Hur lägger jag till personen manuellt till listan?
   - Det är av tekniska skäl för att programmet ska fungera korrekt och har samband med vilken behörighet som är inställd för respektive person i kalkylarket.
     - Rollen **Medlem** - **Bara ta emot**
     - Rollen **Ansvarig** - **Bara skicka** eller **Skicka och ta emot**
-    - Rollen **Ägare** - **Bara skicka**, **Skicka och ta emot**. Denna roll används för den e-postadressen som fylls i variabeln `moderateContentEmail` i filen `Konfiguration.gs`. Ingen vanligt roll alltså.
+    - Rollen **Ägare** - **Bara skicka**, **Skicka och ta emot**. Denna roll används för den e-postadressen som fylls i variabeln `KONFIG_OBJECT.MODERATE_CONTENT_EMAIL` i filen `Konfiguration.gs`. Ingen vanligt roll alltså.
 
 * Varför läggs det till personer i grupppen med rollen **Ägare** fastän jag inte har lagt till dem i gruppen?
-  - Det är av tekniska skäl och används för de som är tillagda som skräppostmoderator för en grupp. Du kan antingen specificera för varje grupp i kalkylarket vilken eller vilka e-postadresser det ska vara eller ange det i variabeln `moderateContentEmail` i filen `Konfiguration.gs` för det som ska gälla som standard. Om inget är angivet i `moderateContentEmail` heller används e-postadressen för den som kör skriptet.
+  - Det är av tekniska skäl och används för de som är tillagda som skräppostmoderator för en grupp. Du kan antingen specificera för varje grupp i kalkylarket vilken eller vilka e-postadresser det ska vara eller ange det i variabeln `KONFIG_OBJECT.MODERATE_CONTENT_EMAIL` i filen `Konfiguration.gs` för det som ska gälla som standard. Om inget är angivet i `moderateContentEmail` heller används e-postadressen för den som kör skriptet.
 
 * Jag vill gärna göra en inställning för en grupp som inte går att göra med programmet. Hur gör jag?
   - Om du för aktuell rad i kalkylarket klickar på **Länk** och där klickar på **Gruppinställningar** kan du göra dina inställningar. Testa köra programmet och se om de finns kvar efter att programmet har kört och om så kan du göra inställningen för fler grupper.
   - Om du tror att det är en inställning som kan uppskattas av flera får du gärna höra av dig så kanske vi kan lägga till det i programmet.
 
-* Jag har gjort grupper där vissa personer inte ska få några e-brev men ska kunna skicka till listan, t.ex. att styrelsen kan skicka till listan. Varför får de en mötesbokning jag skickar till listan fastän de inte ska få några e-brev och hur löser jag det?
+* Jag har gjort grupper där vissa personer inte ska få några e-brev men ska kunna skicka till listan, t.ex. att styrelsen kan skicka till listan. Varför får de en mötesbokning när jag skickar till listan fastän de inte ska få några e-brev och hur löser jag det?
   - Detta har egentligen inget med detta program att göra utan har att göra med hur Google Grupper hanterar mötesbokningar. Enligt [följande](https://support.google.com/calendar/answer/172013?hl=en) är det så att om du som skickar mötesbokningen har behörighet att visa medlemmarna i gruppen kommer inbjudan att skickas ut till respektive medlem i gruppen oavsett hur inställningen för att ta emot e-brev via gruppen är. Om du däremot inte har behörighet att visa medlemmarna i gruppen skickas inbjudan till gruppen som till de vanliga.
   - Förslag till lösning är att skapa en renodlad grupp för de som ska få mötesbokningarna och som enbart innehåller de personer som är tänkt att få mötesbokningarna.
   Skapa sen en kalender att använda för denna specifika grupp, t.ex en kalender för spårarledarna och lägg till behörighet för deras grupp till denna kalender.
@@ -75,9 +75,9 @@ med på deras e-postlista. Hur lägger jag till personen manuellt till listan?
   - Ja, det går men rekommenderas inte med anledning av risken att göra fel och råka radera gruppen och dess logg över tidigare e-brev skickade till den.
   - **Alt 1.** Mest säkra lösningen. Byt namn och e-postadress på den gamla gruppen så att den finns kvar för att sen kunna skapa sen en ny med programmet. Observera att när du byter namn på en grupp läggs det gamla namnet till som ett e-postalias till den gruppen, så du måste ta bort det för att kunna skapa en ny grupp med den e-postadressen. Du har nu kvar e-postloggen via den gamla gruppen och kan kanske ta bort den efter något år eller när det ej längre är aktuellt.
   - **Alt 2.** Den faran som finns med detta alternativ är att gruppen råkar raderas och skapas på nytt då programmet gör så av tekniska skäl om t.ex e-postadressen ändras.
-    1. Öppna upp kalkylarket och ta fram den gömda kolumnen **J**.
+    1. Öppna upp kalkylarket och ta fram den gömda kolumnen **K**. ppppppp kolla upp
        - Denna kolumn/cell innehåller id-numret hos Google för en specifik googlegrupp och används för att identifiera vilken grupp som är på respektive rad i kalkylarket då det ju kan hända att man byter e-postadress på en grupp; men id-numret är ändå sig likt.
     1. Du tar sedan och klistrar in id-numret för den grupp du ska konfigurera.
         - Du hittar id-numret genom att gå in på **admin.google.com** --> **Enheter** --> **Grupper** och där välja en grupp och så ser du id-numret i url:en. Om du gör detta för en grupp som du redan skapat med hjälp av programmet och kalkylarket kan du kontrollera att det blir rätt nummer.
-        - Du kan också få fram en lista över id-nummer för samtliga grupper genom att köra funktionen `TestListAllGroups` i filen `Grupper.gs`.
-    1. Du tar sedan och klistrar in detta id-nummer i kolumn **J** på den tomma raden och **samma namn** och **samma e-postadress** som gruppen har sedan innan i kolumn **A** & **B**.
+        - Du kan också få fram en lista över id-nummer för samtliga grupper genom att köra funktionen `listaAllaGrupperGoogle` i filen `Grupper.gs`.
+    1. Du tar sedan och klistrar in detta id-nummer i kolumn **K** på den tomma raden och **samma namn** och **samma e-postadress** som gruppen har sedan innan i kolumn **A** & **B**.

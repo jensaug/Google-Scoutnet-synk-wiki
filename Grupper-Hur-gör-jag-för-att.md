@@ -5,7 +5,7 @@ Om du saknar något exempel eller behöver hjälp är det bara att mejla emil.oh
 
 ## Grupper - inställningar exempel
 * Hur gör jag om jag bara vill synkronisera grupper / e-postlistor?
-   - Du kör funktionen `Grupper` i filen **Grupper.gs**.
+   - Du kör funktionen `synkroniseraGrupperAllaRader` i filen **Grupper.gs** för att synkronisera alla grupper du har definerat i kalkylarket.
 
 * Exempel på olika typer av vanliga listor
 

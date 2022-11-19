@@ -30,17 +30,16 @@ I stället för att ange listid på något ställe så anger du en e-postadress 
 komma emellan. Det går bra att både använda listid och e-postadress till samma lista.
 
 ## Inställningar för att komma igång (i Konfiguration.gs)
-- Ändra kårens domännamn på variabeln `domain`.
-- Ändra kårens **Kår-ID för webbtjänster** på variabeln `groupId`. Hittas i Scoutnet på sidan för
+- Ändra kårens domännamn på variabeln `KONFIG_OBJECT.DOMAIN`.
+- Ändra kårens **Kår-ID för webbtjänster** på variabeln `KONFIG_OBJECT.SCOUTNET_GROUP_ID`. Hittas i Scoutnet på sidan för
   Webbkoppling.
-- Ändra api-nyckeln med namn `api_key_mailinglists` som hittas i Scoutnet under
+- Ändra api-nyckeln med namn `KONFIG_OBJECT.API_KEY_MAILINGLISTS` som hittas i Scoutnet under
   Webbkoppling under **Get a csv/xls/json list of members, based on mailing lists you have set up**.
-- Skapa ett Google Kalkylark och klistra in webbadressen vid variabeln `spreadsheetUrl_Grupper`.
 - Ändra vart e-post som misstänkts för skräppost ska skickas genom att uppdatera variabeln
-  `moderateContentEmail`. Om inget anges skickas e-breven till den användare som kör detta program.
+  `KONFIG_OBJECT.MODERATE_CONTENT_EMAIL`. Om inget anges skickas e-breven till den användare som kör detta program.
   Det går inte att ange en av kårens grupper som mottagare, men enskilda e-postadresser och
   Scoutnet-id går bra.
-- Om du gör detta för ett distrikt. Ändra variabeln `organisationType` från `group` till `district`.
+- Om du gör detta för ett distrikt. Ändra variabeln `KONFIG_OBJECT.ORGANISATION_TYPE` från `group` till `district`.
 - Spara filen.
 - Välj funktionen **skapaRubrikerGrupper** i **Start_funktioner.gs** och kör den.
 - Fyll i övriga fält i filen Konfiguration.gs vid behov och möjligt.
@@ -49,9 +48,9 @@ komma emellan. Det går bra att både använda listid och e-postadress till samm
 ## Enkelt och avancerat läge
 Det går att ställa in om du vill visa samtliga kolumner i kalkylarket för olika
 inställningar eller endast de grundläggande. Detta för att kunna hålla det enkelt.
-I filen **Grupper.gs** finns funktionerna `enkelLayout()` och `avanceradLayout()` att använda för detta.
+I filen **Grupper.gs** finns funktionerna `visaEnkelLayoutGrupper()` och `avanceradLayout()` att använda för detta.
 De visar och döljer egentligen bara olika kolumner i kalkylarket, så om man vill
-kan man anropa `avanceradLayout()` för att visa alla kolumner och sen dölja de man inte önskar.
+kan man anropa `visaAvanceradLayoutGrupper()` för att visa alla kolumner och sen dölja de man inte önskar.
 
 ## Förtydliga hur man skickar e-brev till en e-postlista
 Du kan ange en sidfot som läggs till i alla e-brev som skickas till listan.
