@@ -30,8 +30,7 @@ där X motsvarar en siffra från 1-5. (Siffran 5 är satt just för att det inte
 ## Inställningar för att komma igång (i Konfiguration.gs)
 - Ändra kårens domän namn på variabeln `KONFIG_OBJECT.DOMAIN`.
 - Ändra kårens grupp-id som finns angivet i Scoutnet på sidan för Webbkoppling
-- Ändra api-nyckeln som under Webbkoppling i Scoutnet står under
-  **Get a detailed csv/xls/json list of all members**
+- Ändra apinyckeln för att hämta information om alla medlemmar i kåren på variabeln `KONFIG_OBJECT.API_KEY_LIST_ALL`. Den hittas i Scoutnet på sidan **Webbkoppling** vid texten **Get a detailed csv/xls/json list of all members**.
 - Om du gör detta för ett distrikt. Ändra variabeln `KONFIG_OBJECT.ORGANISATION_TYPE` från `group`
   till `district`.
 - I **Adminkonsolen** under **Organisationsenheter** skapar du en ny organisationsenhet som heter
