@@ -3,7 +3,7 @@ Med kontaktsynkronisering kan du ställa in vilka i kåren (antagligen funktion�
 
 Kontaktgruppsynkroniseringen består av 3 uppsättningar av skript
 1. **Biblioteket** - Består av alla filer i mappen **Bibliotek** på https://github.com/Scouterna/Google-Scoutnet-synk. Erbjuds centralt men går att köra själv om du vill ha full koll på allting men är lite jobbigare att uppdatera vid behov.
-1. **Kårens skript** - Består av det Google kalkylark med alla andra skript för kåren som du har satt upp. Består av alla .gs-filer som syns direkt på https://github.com/Scouterna/Google-Scoutnet-synk förutom **Kontakter-Anvandare.gs**.
+1. **Kårens skript** - Består av det Google kalkylark med alla andra skript för kåren som du har satt upp. Består av alla .gs-filer som syns direkt på https://github.com/Scouterna/Google-Scoutnet-synk förutom **Kontakter-Anvandare.gs**. ![Bild över kårens skript](Bilder/K%C3%A5rens-skript.PNG)
 1. **Användarnas skrip** - Består av **Kontakter-Anvandare** som ligger i ett Google Kalkylark. Detta skript anropar **Kårens skript** med din e-postadress och ett lösenord som skickas till dig första gången du försöker köra skriptet. **Kårens skript** håller ordning på vilka medlemmar du ska få kontaktuppgifter för och vilka kontaktgrupper de ska finnas i.
 
 ## Inställningar för att komma igång (i Konfiguration.gs)
