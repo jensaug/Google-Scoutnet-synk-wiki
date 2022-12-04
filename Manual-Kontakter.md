@@ -60,3 +60,10 @@ Dessa skript anropar Biblioteket som på bilden benämns **ScoutnetSynkLib**.
    1. I fältet i kalkylarket för **Adress till kårens webbapp** ska du ange den webbadress som fås fram om du i **Kårens skript** trycker på **Implementera**/**Hantera implementeringar** och som anges under **Webbapp**/**Webbadress**.
    1. I fältet **Namn på scoutkår** fyller du i namnet på din scoutkår.
    1. Skicka nu ut en länk till kårens egna kalkylarksmall som du nu har anpassat för din kår till de som ska kunna synkronisera kontakter i kåren.
+
+## Sätta egen brödtext i e-brev som skickas ut
+Det finns två olika e-brev som skickas ut automatiskt avseende synkronisering av kontaktgrupper. Nedan gås igenom hur du sätter brödtexten htmlformaterad. Det finns också motsvarande variabler som nämns ovan som visas när htmlformaterad brödtext ej är möjligt.
+1. De e-brev som skickar lösenord till kåranvändare för att de ska kunna synkronisera kontakter för de som använder vanliga e-postklienter. Uppdateras med variabeln `KONFIG_OBJECT.CONTACT_GROUPS_EMAIL_CREDENTIALS_HTMLBODY`.
+1. De e-brev som upplyser lämplig person i kåren om att det finns en inkomplett medlemsmatchning mellan en barnmedlem och en vuxen medlem för de som använder vanliga e-postklienter. Uppdateras med variabeln `KONFIG_OBJECT.CONTACT_GROUPS_EMAIL_PARTIAL_MEMBER_MATCH_HTMLBODY`.
+
+Bland **Kårens skript** i filen **Kontakter-Admin.gs** finns funktionen **testGetHtmlEmailBodytestGetHtmlEmailBody**. Den fungerar som att om du skapar ett e-postutkast i Gmail med ämne **Kontaktgrupper** och kör funktionen kommer den skapa htmlkod i körloggen som du kan kopiera och sätta in i någon av ovanstående variabler om önskas. Om du vill att någon av variablerna ovan ska skicka personliga e-brev som i exemplet behöver du pilla lite för att få in det. Det är bara de personliga variablerna som används i exemplet som går att använda.
