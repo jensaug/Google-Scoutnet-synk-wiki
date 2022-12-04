@@ -1,5 +1,7 @@
 Välkommen till Google-Scoutnet-synk wiki!
 
+Du hittar mallfiler [här](https://drive.google.com/drive/folders/1CUOeA3lrU9I6DUmeej8m2ykH9LsNCfvZKopiera)
+
 # Inställningar
 - [Inställningar](Inställningar)
 
