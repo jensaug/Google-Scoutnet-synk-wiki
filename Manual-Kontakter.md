@@ -67,3 +67,9 @@ Det finns två olika e-brev som skickas ut automatiskt avseende synkronisering a
 1. De e-brev som upplyser lämplig person i kåren om att det finns en inkomplett medlemsmatchning mellan en barnmedlem och en vuxen medlem för de som använder vanliga e-postklienter. Uppdateras med variabeln `KONFIG_OBJECT.CONTACT_GROUPS_EMAIL_PARTIAL_MEMBER_MATCH_HTMLBODY`.
 
 Bland **Kårens skript** i filen **Kontakter-Admin.gs** finns funktionen **testGetHtmlEmailBodytestGetHtmlEmailBody**. Den fungerar som att om du skapar ett e-postutkast i Gmail med ämne **Kontaktgrupper** och kör funktionen kommer den skapa htmlkod i körloggen som du kan kopiera och sätta in i någon av ovanstående variabler om önskas. Om du vill att någon av variablerna ovan ska skicka personliga e-brev som i exemplet behöver du pilla lite för att få in det. Det är bara de personliga variablerna som används i exemplet som går att använda.
+
+# Exempel
+Exempel på olika inställningar för uppsättning av synkronisering av kontakter hittas [här](./Kontakter-Hur-gör-jag-för-att).
+
+# Hjälp
+Hjälp på vanliga frågor hittas [här](./Hjälp-Kontakter).
