@@ -6,7 +6,7 @@ Om du saknar något exempel eller behöver hjälp är det bara att mejla emil.oh
 ## Kontakter - inställningar exempel
 - Hur gör jag om jag vill att alla spårarledare ska få en kontaktgrupp och kontaktinfo till alla spårarscouter?
 
-För följande i kalkylbladet **Kontakter**
+Gör följande i kalkylbladet **Kontakter**
     <table>
         <thead>
             <tr>
@@ -23,3 +23,4 @@ För följande i kalkylbladet **Kontakter**
             </tr>
         </tbody>
     </table>
+    
