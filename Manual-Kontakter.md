@@ -41,9 +41,10 @@ Dessa skript anropar Biblioteket som på bilden benämns **ScoutnetSynkLib**.
 - Nyckelord som hittas som anteckning i en medlemsprofil som ska bytas ut mot något annat. Det som ej skrivs här och som inte heller byts ut följer inte med vid kontaktsynkroniseringen. Den är okänslig för versaler och gemener. Uppdateras med variabeln `KONFIG_OBJECT.NOTE_KEYS_TO_REPLACE`.
 
 ## Ställa in synkronisering av kontaktgrupper
+1. Uppdatera **Konfiguration.gs** enligt instruktion [ovan](#inställningar-för-att-komma-igång-i-konfigurationgs)
 1. Kalkylarket för kårens inställningar av synkronisering av Grupper och Medlemslistor innehåller också kalkylbladen **Kontakter** och **Kontakter-Användare**
     - **Kontakter** - Innehåller inställningar för vilka som ska få synkronisera kontakter och vilka kontakter de ska få synkronisera. I kolumnen **Medlem i Google grupp som ska ges behörighet** ställer du in vilka som ska ges behörighet att synkronisera de kontakter för de medlemmar som tillhör ett **Scoutnet-id**, som anges i kolumnen bredvid.
-    - **Kontakter-Användare** - Innehåller de användare som ska få synkronisera några kontakter. Detta kalkylblad och alla användare uppdateras genom att köra funktionen **updateContactGroupsAuthnSheetUsers**.
+    - **Kontakter-Användare** - Innehåller de användare som ska få synkronisera några kontakter. Detta kalkylblad och alla användare uppdateras genom att köra funktionen **updateContactGroupsAuthnSheetUsers**. Ställ in **Utlösare** att denna funkton ska köras regelbundet, förslagsvis en gång per dygn.
       - I kolumnen **E-post** anges e-postadressen för de som ska få synkronisera användare.
       - I kolumnen **Lösenord** anges vilket lösenord användare behöver ange för att kunna synkronisera. Detta lösenord är slumpat fram och kan bytas av dig som har behörighet till kalkylarket vid behov men är inget som rekommenderas. Användare som anger ett felaktigt lösenord när de försöker synkronisera kontakter kommer få sitt lösenord skickat till sig automatiskt via e-post.
       - I kolumnen **Senast använd** syns senaste gången en användare har synkroniserat kontakter. Detta kan användas för att se vilka i kåren som synkronisera kontakter.
