@@ -59,7 +59,8 @@ Dessa skript anropar Biblioteket som på bilden benämns **ScoutnetSynkLib**.
    1. Bland exempelfilerna som du hittar [här](https://drive.google.com/drive/folders/1CUOeA3lrU9I6DUmeej8m2ykH9LsNCfvZKopiera) finns filen **Synka Kontakter**. Kopiera den till lämplig plats till din Google drive eller delad enhet.
    1. I fältet i kalkylarket för **Adress till kårens webbapp** ska du ange den webbadress som fås fram om du i **Kårens skript** trycker på **Implementera**/**Hantera implementeringar** och som anges under **Webbapp**/**Webbadress**.
    1. I fältet **Namn på scoutkår** fyller du i namnet på din scoutkår.
-   1. Skicka nu ut en länk till kårens egna kalkylarksmall som du nu har anpassat för din kår till de som ska kunna synkronisera kontakter i kåren.
+   1. Ändra delningsinställningar för kalkylarket så att inte kårens funktionärer kan redigera det utan bara så att de kan titta på det.
+   1. Skicka nu ut en länk till kårens egna kalkylarksmall som du nu har anpassat för din kår till de som ska kunna synkronisera kontakter i kåren. Be dem kopiera kårens egna kalkylarksmall, fylla i deras e-postadress och sen trycka på **Synkronisera kontakter**
 
 ## Sätta egen brödtext i e-brev som skickas ut
 Det finns två olika e-brev som skickas ut automatiskt avseende synkronisering av kontaktgrupper. Nedan gås igenom hur du sätter en egen htmlformaterad brödtexten om du inte vill använda den som finns i mallen. Det finns också motsvarande variabler som nämns ovan som visas när htmlformaterad brödtext ej är möjligt.
